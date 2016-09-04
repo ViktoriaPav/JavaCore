@@ -20,6 +20,7 @@ public class Module2part1 {
     }
 
 
+
     static int sum(int[] intArrays) {
         int sum = 0;
         for (int intArray : intArrays) {
