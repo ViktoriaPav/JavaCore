@@ -34,6 +34,8 @@ public class Module2Part3 {
             } else {
                     bank = false;
                 }
+            }else {
+                bank = false;
             }
         }
         return bank;
