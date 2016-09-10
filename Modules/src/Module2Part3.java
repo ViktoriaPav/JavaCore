@@ -32,12 +32,10 @@ public class Module2Part3 {
                 if (balance > commision + withdrawal) {
                     balance = balance - commision - withdrawal;
                     System.out.println("OK " + withdrawal + " " + balance);
-                    bank = false;
+
                 } else {
-                    bank = true;
+                    bank = false;
                 }
-            } else {
-                bank = true;
             }
         }
         return bank;
