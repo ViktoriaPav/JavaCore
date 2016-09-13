@@ -18,7 +18,7 @@ public class Module2Part4 {
     }
 
     static Boolean bank(int[] balances, String[] ownerNames, String ownerName, double fund) {
-        Boolean bank = true;
+        Boolean bank = false;
         int balance = 0;
 
         for (int i = 0; i <= ownerNames.length - 1; i++) {
@@ -30,10 +30,10 @@ public class Module2Part4 {
                 balances[i] = fundInt + balances[i];
 
                 System.out.println("OK " + ownerNames[i] + " " + balances[i]);
-                bank = false;
+                return bank = true;
 
             } else {
-                bank = true;
+                bank = false;
             }
         }
         return bank;
