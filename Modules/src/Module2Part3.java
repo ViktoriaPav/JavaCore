@@ -19,7 +19,7 @@ public class Module2Part3 {
     }
 
     static Boolean bank(int[] balances, String[] ownerNames, String ownerName, double withdrawal) {
-        Boolean bank = true;
+        Boolean bank = false;
         int balanceInt = 0;
 
         for (int i = 0; i <= ownerNames.length - 1; i++) {
@@ -32,7 +32,7 @@ public class Module2Part3 {
                 if (balance > commision + withdrawal) {
                     balance = balance - commision - withdrawal;
                     System.out.println("OK " + withdrawal + " " + balance);
-
+                    bank= true;
                 } else {
                     bank = false;
                 }
