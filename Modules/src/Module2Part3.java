@@ -20,13 +20,11 @@ public class Module2Part3 {
 
     static Boolean bank(int[] balances, String[] ownerNames, String ownerName, double withdrawal) {
         Boolean bank = false;
-        int balanceInt = 0;
 
         for (int i = 0; i <= ownerNames.length - 1; i++) {
 
             if (ownerName.equals(ownerNames[i])) {
-                balanceInt = balances[i];
-                double balance = (double) balanceInt;
+                double balance = (double) balances[i];
                 double commision = withdrawal / 100 * 5;
 
                 if (balance > commision + withdrawal) {
