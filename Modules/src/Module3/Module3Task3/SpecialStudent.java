@@ -1,8 +1,8 @@
 package Module3.Module3Task3;
 
 public class SpecialStudent extends CollegeStudent {
-    long secretKey;
-    String email;
+    private long secretKey;
+    private String email;
 
     public SpecialStudent(String firstName, String lastName, int group) {
         super(firstName, lastName, group);
@@ -14,6 +14,22 @@ public class SpecialStudent extends CollegeStudent {
 
     public SpecialStudent(String firstName, String lastName, int group, String collegeName, int rating, long id, int age, Course[] coursesTaken, long secretKey) {
         super(firstName, lastName, group, collegeName, rating, id, age, coursesTaken);
+        setSecretKey(secretKey);
+    }
+
+    public long getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(long secretKey) {
         this.secretKey = secretKey;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
