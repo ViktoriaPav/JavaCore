@@ -5,7 +5,6 @@ public class Main {
 
         Bird bird = new Bird("Luscinia", "Jack", 2013, "Odessa");
 
-        bird.talk();
         bird.talking();
     }
 }
