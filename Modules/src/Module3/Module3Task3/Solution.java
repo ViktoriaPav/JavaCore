@@ -2,9 +2,9 @@ package Module3.Module3Task3;
 
 public class Solution {
     public static void main(String[] args) {
-        Course course1 = new Course(2013/11/12, "Alex");
-        Course course2 = new Course(2013/9/15, "Clarke");
-        Course course3 = new Course(2013/6/20,"Lora");
+        Course course1 = new Course(2013,11,12, "Alex");
+        Course course2 = new Course(2013,9,15, "Clarke");
+        Course course3 = new Course(2013,6,20,"Lora");
         Course course4 = new Course(40,"Maikl","Maks");
         Course course5 = new Course(50,"Diniel" ,"Mick");
 
