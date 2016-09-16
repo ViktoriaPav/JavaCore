@@ -6,25 +6,25 @@ public class Student {
     private int group;
     private Course[] coursesTaken;
     private int age;
-    
+
 
     public Student(String firstName, String lastName, int group) {
-        setFirstName(firstName);
-        setLastName(lastName);
-        setGroup(group);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.group = group;
     }
 
     public Student(String lastName, Course[] coursesTaken) {
-        setLastName(lastName);
-        setCoursesTaken(coursesTaken);
+        this.lastName = lastName;
+        this.coursesTaken = coursesTaken;
     }
 
-    public Student(String lastName, String firstName, int group, Course[] coursesTaken, int age) {
-        setLastName(lastName);
-        setFirstName(firstName);
-        setGroup(group);
-        setCoursesTaken(coursesTaken);
-        setAge(age);
+    public Student(String firstName, String lastName, int group, Course[] coursesTaken, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.group = group;
+        this.coursesTaken = coursesTaken;
+        this.age = age;
     }
 
     public String getFirstName() {

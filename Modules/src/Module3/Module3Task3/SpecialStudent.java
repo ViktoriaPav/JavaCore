@@ -14,7 +14,7 @@ public class SpecialStudent extends CollegeStudent {
 
     public SpecialStudent(String firstName, String lastName, int group, String collegeName, int rating, long id, int age, Course[] coursesTaken, long secretKey) {
         super(firstName, lastName, group, collegeName, rating, id, age, coursesTaken);
-        setSecretKey(secretKey);
+        this.secretKey = secretKey;
     }
 
     public long getSecretKey() {

@@ -5,8 +5,8 @@ public class Solution {
         Course course1 = new Course(2013/11/12, "Alex");
         Course course2 = new Course(2013/9/15, "Clarke");
         Course course3 = new Course(2013/6/20,"Lora");
-        Course course4 = new Course(40,"Maks");
-        Course course5 = new Course(50,"Mick");
+        Course course4 = new Course(40,"Maikl","Maks");
+        Course course5 = new Course(50,"Diniel" ,"Mick");
 
         Student student1 = new Student("Nick","Bush",1);
         Student student2 = new Student("Zinger", new Course[]{course1, course2, course3});

@@ -13,13 +13,13 @@ public class CollegeStudent extends Student {
         super(lastName, coursesTaken);
     }
 
-    public CollegeStudent(String firstName, String lastName, int group, String collegeName, int rating, long id, int age, Course[] coursesTaken) {
+    public CollegeStudent(String firstName, String lastName, int group, String collegeName, int rating, long id,int age, Course[] coursesTaken) {
         super(firstName, lastName, group);
         super.setCoursesTaken(coursesTaken);
         super.setAge(age);
-        setCollegeName(collegeName);
-        setRating(rating);
-        setId(id);
+        this.collegeName = collegeName;
+        this.rating = rating;
+        this.id = id;
     }
 
     public String getCollegeName() {

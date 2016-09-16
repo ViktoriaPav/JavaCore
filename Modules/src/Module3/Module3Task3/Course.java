@@ -9,13 +9,14 @@ public class Course {
     private String teacherName;
 
     public Course(Date startDate, String name) {
-        setStartDate(startDate);
-        setName(name);
+        this.startDate = startDate;
+        this.name = name;
     }
 
-    public Course(int hoursDuration, String teacherName) {
-        setHoursDuration(hoursDuration);
-        setTeacherName(teacherName);
+    public Course(int hoursDuration, String name, String teacherName) {
+        this.hoursDuration = hoursDuration;
+        this.name = name;
+        this.teacherName = teacherName;
     }
 
     public Date getStartDate() {
