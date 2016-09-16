@@ -1,3 +1,5 @@
+package Module2;
+
 public class Module2part1 {
     public static void main(String[] args) {
         int[] intArrays = {5, 8, -5, 9, 26, 948, 34, -45, -4, -65};
@@ -38,7 +40,6 @@ public class Module2part1 {
         return sum;
     }
 
-
     static int min(int[] intArrays) {
         int min = intArrays[0];
         for (int intArray : intArrays) {
@@ -60,7 +61,6 @@ public class Module2part1 {
         return min;
     }
 
-
     static int max(int[] intArrays) {
         int max = intArrays[0];
         for (int intArray : intArrays) {
@@ -73,7 +73,6 @@ public class Module2part1 {
 
 
     static Double max(Double[] doubleArrays) {
-
         Double max = doubleArrays[0];
         for (Double doubleArray : doubleArrays) {
             if (max < doubleArray) {
@@ -82,7 +81,6 @@ public class Module2part1 {
         }
         return max;
     }
-
 
     static int maxPositive(int[] intArrays) {
         int maxPositive = 0;
@@ -111,7 +109,7 @@ public class Module2part1 {
     }
 
 
-     static int modulus(int x) {
+    static int modulus(int x) {
         if (x < 0) {
             x = x * -1;
         }
@@ -149,5 +147,6 @@ public class Module2part1 {
     }
 
 }
+
 
 

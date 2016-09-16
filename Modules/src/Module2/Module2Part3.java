@@ -1,3 +1,5 @@
+package Module2;
+
 import java.util.Scanner;
 
 public class Module2Part3 {
