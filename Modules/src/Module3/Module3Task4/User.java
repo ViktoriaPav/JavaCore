@@ -66,17 +66,17 @@ public class User {
     }
 
     //that add salary to the balance of the user
-    public void paySalary(int salary, int balance) {
-        balance = balance + salary;
+    public void paySalary() {
+        this.balance = this.balance + this.salary;
     }
 
     //withdraw(int summ) - takes money from the balance with 5% commision if summ < 1000 and 10% commision in other cases
-    public void withdraw(int summ, int balance) {
+    public void withdraw(int summ) {
         double commision = summ / 100;
         if (summ < 1000) {
-            balance = balance - summ - (int) (commision * 5);
+            this.balance = this.balance - summ - (int) (commision * 5); //5%
         } else {
-            balance = balance - summ - (int) (commision * 10);
+            this.balance = this.balance - summ - (int) (commision * 10); //10%
         }
     }
 
@@ -86,7 +86,7 @@ public class User {
     }
 
     //monthIncreaser(int addMonth) - increase monthsOfEmployment by addMonth
-    public void monthIncreaser(int addMonth, int monthsOfEmployment) {
-        monthsOfEmployment = monthsOfEmployment + addMonth;
+    public void monthIncreaser(int addMonth) {
+        this.monthsOfEmployment = this.monthsOfEmployment + addMonth;
     }
 }
