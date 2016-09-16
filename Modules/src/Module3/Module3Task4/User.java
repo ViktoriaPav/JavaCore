@@ -65,14 +65,16 @@ public class User {
         this.currency = currency;
     }
 
+
     //that add salary to the balance of the user
     public void paySalary() {
         this.balance = this.balance + this.salary;
     }
 
+
     //withdraw(int summ) - takes money from the balance with 5% commision if summ < 1000 and 10% commision in other cases
     public void withdraw(int summ) {
-        double commision = summ / 100;
+        double commision = summ / 100; //1%
         if (summ < 1000) {
             this.balance = this.balance - summ - (int) (commision * 5); //5%
         } else {
@@ -80,10 +82,13 @@ public class User {
         }
     }
 
-    // companyNameLenfht - calculates name of the company name
-    public void companyNameLenfht(String name, String companyName) {
 
+    // companyNameLenfht - calculates name of the company name
+    public int companyNameLength() {
+        int companyNameLength = this.companyName.length();
+        return companyNameLength;
     }
+
 
     //monthIncreaser(int addMonth) - increase monthsOfEmployment by addMonth
     public void monthIncreaser(int addMonth) {
