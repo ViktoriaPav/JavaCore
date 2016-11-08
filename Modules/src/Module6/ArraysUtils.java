@@ -1,7 +1,7 @@
 package Module6;
 
 public final class ArraysUtils {
-
+//
 
     public static int sum(int[] intArrays) {
         int sum = 0;

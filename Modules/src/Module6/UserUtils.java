@@ -1,6 +1,6 @@
 package Module6;
 
-import java.util.Arrays;
+import java.util.Arrays;//
 
 public class UserUtils {
     //    Make sure paySalaryToUsers and getUsersId methods can’t be overriden in other classes.
